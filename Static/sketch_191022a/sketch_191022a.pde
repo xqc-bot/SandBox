@@ -8,4 +8,4 @@
 
 // Mouth, lne ("curved line")
 
-//Optional:ears,  
+//Optional: ears, moustache 
