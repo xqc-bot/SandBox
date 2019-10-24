@@ -16,9 +16,8 @@ float nose3X = width*2.5/4;
 float nose3Y = height*2.5/4;
 
 int mouth1X = width*1/4;
-int mouth1Y = height*3/4;
-int mouth4X = width*1/4;
-int mouth4Y = height*1/4;
+float mouth4X = width*1.5/4;
+float mouth4Y = height*1.5/4;
 
 // Face - Circle
 ellipse(249,249,499,499);
