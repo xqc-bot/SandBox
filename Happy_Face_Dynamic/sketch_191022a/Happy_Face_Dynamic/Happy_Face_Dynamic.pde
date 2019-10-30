@@ -44,7 +44,7 @@ void setup() {
 
   ellipse(width*1/2, height*1/2, width, height); // Face - Circle
   triangle(nose1X, nose1Y, nose2X, nose2Y, nose3X, nose3Y); // Nose - Triangle
-  //Optional: ears, moustache 
+  rect(width*19/20,height*0,width*1/20,height*1/20);//Optional: ears, moustache 
   ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter); // Eyes - Small circles, oval
   ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
     arc(frown1X,frown1Y,frown2X,frown2Y,-PI,0);
@@ -54,7 +54,15 @@ void draw() {
   color red = #F00A0A;
   fill(red); //red
   noStroke(); // outline of measles
-  ellipse(random(width), random(height), measleDiameter, measleDiameter);
+  ellipse(random(width*8/10, width*9.5/10) , random(height*10/40, height*30/40), measleDiameter, measleDiameter);
+  ellipse(random(width*7/10, width*9/10) , random(height*8/40, height*32/40), measleDiameter, measleDiameter);
+  ellipse(random(width*6/10, width*8/10) , random(height*4/40, height*36/40), measleDiameter, measleDiameter);
+  ellipse(random(width*5/10, width*7/10) , random(height*2/40, height*38/40), measleDiameter, measleDiameter);
+  ellipse(random(width*4/10, width*6/10) , random(height*1/40, height*39/40), measleDiameter, measleDiameter);
+  ellipse(random(width*3/10, width*5/10) , random(height*2/40, height*38/40), measleDiameter, measleDiameter);
+  ellipse(random(width*2/10, width*4/10) , random(height*4/40, height*36/40), measleDiameter, measleDiameter);
+  ellipse(random(width*1.1/10, width*3/10) , random(height*7.7/40, height*33/40), measleDiameter, measleDiameter);
+  ellipse(random(width*0.5/10, width*4/10) , random(height*10/40, height*30/40), measleDiameter, measleDiameter);
   fill(255); //default,gray scale
   stroke(1); //default
   
@@ -62,5 +70,11 @@ void draw() {
   ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
    triangle(nose1X, nose1Y, nose2X, nose2Y, nose3X, nose3Y);
       arc(frown1X,frown1Y,frown2X,frown2Y,-PI,0);
+}
 
+//Listener
+void mousePressed(){
+if (mouseX >= width*19/20  && mouseX <= width && mouseY >= height*0 && mouseY <= height*1/20){
+exit();
+}
 }
