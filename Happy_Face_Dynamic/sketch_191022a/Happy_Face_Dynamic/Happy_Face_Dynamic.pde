@@ -69,7 +69,7 @@ void draw() {
   ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
   ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
    triangle(nose1X, nose1Y, nose2X, nose2Y, nose3X, nose3Y);
-      arc(frown1X,frown1Y,frown2X,frown2Y,-PI,0);
+      arc(frown1X,frown1Y,frown2X,frown2Y,-PI+QUARTER_PI,OPEN);
 }
 
 //Listener
