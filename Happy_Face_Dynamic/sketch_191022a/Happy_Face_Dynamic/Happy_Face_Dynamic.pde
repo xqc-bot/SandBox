@@ -10,6 +10,14 @@ float frown2Y;
 
 void setup() {
   size(500, 500);
+  //fullScreen();
+  
+//Font Setup
+println ("Start of Console");
+//String[] fontList = PFont.list(); //Lists all font available on system
+//printArray(fontList); // For listing all possible fonts to choose, then createFont
+
+quitButtonSetup();
 
   //Eyes
    leftEyeX = width*1/4;
@@ -44,13 +52,13 @@ void setup() {
 
   ellipse(width*1/2, height*1/2, width, height); // Face - Circle
   triangle(nose1X, nose1Y, nose2X, nose2Y, nose3X, nose3Y); // Nose - Triangle
-  rect(width*19/20,height*0,width*1/20,height*1/20);//Optional: ears, moustache 
   ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter); // Eyes - Small circles, oval
   ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
     arc(frown1X,frown1Y,frown2X,frown2Y,-PI,0);
 }
 
 void draw() {
+  quitButtonDraw();
   color red = #F00A0A;
   fill(red); //red
   noStroke(); // outline of measles
@@ -69,12 +77,10 @@ void draw() {
   ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
   ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
    triangle(nose1X, nose1Y, nose2X, nose2Y, nose3X, nose3Y);
-      arc(frown1X,frown1Y,frown2X,frown2Y,-PI+QUARTER_PI,OPEN);
+      arc(frown1X,frown1Y,frown2X,frown2Y,-PI+QUARTER_PI,CLOSE);
 }
 
 //Listener
 void mousePressed(){
-if (mouseX >= width*19/20  && mouseX <= width && mouseY >= height*0 && mouseY <= height*1/20){
-exit();
-}
+  quitButtonMouseClicked();
 }
