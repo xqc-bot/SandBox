@@ -7,6 +7,8 @@ int mouth1X,mouth1Y, mouth2X;
 float mouth2Y;
 int frown1X, frown1Y, frown2X;
 float frown2Y;
+int pupil1X;
+int Pupil1Y;
 
 void setup() {
   size(500, 500);
@@ -48,6 +50,11 @@ quitButtonSetup();
       
   //Measle
   measleDiameter = width*1/50; //Value = 10
+
+// Pupil
+pupil1X = width*1/4;
+Pupil1Y = width*1/4;
+
 
 
   ellipse(width*1/2, height*1/2, width, height); // Face - Circle
