@@ -12,7 +12,7 @@ void setup(){
 }
 
 void draw(){
-  background(black);
+ // background(black);
   //Drawing Code
   quitButtonDraw();
   if (draw == true) {
