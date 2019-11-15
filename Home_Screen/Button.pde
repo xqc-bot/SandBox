@@ -1,5 +1,5 @@
 //Global Variables
-String word = "Click Me!";
+String word = "Right Click Me!";
 PFont Button1;
 void buttonMouseClicked(){ 
   color white = #FFFFFF;
