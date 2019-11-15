@@ -2,6 +2,8 @@
 String word = "Click Me!";
 PFont Button1;
 void buttonMouseClicked(){ 
+  color white = #FFFFFF;
+  
   if (mouseButton == LEFT){
 if (mouseX >= width*0  && mouseX <= width*1/3 && mouseY >= height*0 && mouseY <= height*1/3){
 }}
@@ -14,6 +16,10 @@ if (mouseButton == RIGHT){
  if (mouseX >= width*0  && mouseX <= width*1/3 && mouseY >= height*0 && mouseY <= height*1/3){
  fill(0);
  rect(0,50,166.66666666,50);} // Text box 1
+ fill(white);
+ textAlign(CENTER,CENTER);
+ text(word,0,50,166.66666666,50);
+ fill(255);
  rect(166.666666666666,0,166.666666666666,200,28,28,28,28); // Button 2
  
 }
