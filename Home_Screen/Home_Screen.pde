@@ -75,6 +75,8 @@ ptDiameter = width*1/27.7777777777;
 
 quitButtonSetup();
 
+buttonDraw();
+
 }
 
 void draw(){
@@ -100,6 +102,7 @@ void draw(){
    ellipse(pt15X, pt15Y, ptDiameter, ptDiameter);
    ellipse(pt16X, pt16Y, ptDiameter, ptDiameter);
    fill(white);
+   buttonDraw();
 
 quitButtonDraw();
 
