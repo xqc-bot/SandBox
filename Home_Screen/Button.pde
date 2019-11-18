@@ -3,10 +3,10 @@ String word1 = "Right Click Me!";
 PFont Button1;
   
 void buttonMouseClicked1(){ 
-  if (mouseButton == LEFT){
+
 if (mouseX >= width*0  && mouseX <= width*1/3 && mouseY >= height*0 && mouseY <= height*1/3){
 }}
-}
+
 
 void buttonDraw1(){
 if (mouseButton == RIGHT){ 

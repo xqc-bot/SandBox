@@ -74,7 +74,7 @@ pt16Y = height*3/3;
 ptDiameter = width*1/27.7777777777;
 
 quitButtonSetup();
- buttonSetup2();
+// buttonSetup2();
 
 }
 
@@ -82,7 +82,6 @@ void draw(){
   fill(0);
   ellipse(pt1X,pt1Y,ptDiameter,ptDiameter);
   fill(white);
-  rect(pt1X,pt1Y, rectWidth,rectHeight);
   fill(circleRed);
    ellipse(pt1X,pt1Y,ptDiameter,ptDiameter);
    ellipse(pt2X,pt2Y, ptDiameter, ptDiameter);
@@ -103,7 +102,8 @@ void draw(){
    fill(white);
    
    buttonDraw1();
-   buttonDraw2();
+//   buttonDraw2();
+
 
 quitButtonDraw();
 
@@ -112,5 +112,5 @@ quitButtonDraw();
 void mousePressed(){
 quitButtonMouseClicked();
 buttonMouseClicked1();
-buttonMouseClicked2();
+//buttonMouseClicked2();
 }
