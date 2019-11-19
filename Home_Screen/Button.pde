@@ -3,16 +3,16 @@ String word1 = "Right Click Me!";
 PFont Button1;
   
 void buttonMouseClicked1(){ 
-
 if (mouseX >= width*0  && mouseX <= width*1/3 && mouseY >= height*0 && mouseY <= height*1/3){
 }}
 
 
 void buttonDraw1(){
 if (mouseButton == RIGHT){ 
+  if (mouseX >= width*0  && mouseX <= width*1/3 && mouseY >= height*0 && mouseY <= height*1/3)
  fill(random(255),random(255),random(255));}
- rect(0,0,166.666666667,200,28,28,28,28); // Button 1
- if (mouseX >= width*0  && mouseX <= width*1/3 && mouseY >= height*0 && mouseY <= height*1/3){
+ rect(0,0,166.666666667,200,28,28,28,28); // Button 1 
+ {
  fill(0);
  rect(0,50,166.66666666,50);} // Text box 1
  fill(white);
