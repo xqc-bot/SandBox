@@ -1,5 +1,5 @@
 // Global Variables
-float ptDiameter;
+float ptDiameter,rectWidth,rectHeight;
 float pt1X, pt1Y;
 float pt2X, pt2Y;
 float pt3X, pt3Y; 
@@ -16,12 +16,9 @@ float pt13X, pt13Y;
 float pt14X, pt14Y;
 float pt15X, pt15Y;
 float pt16X, pt16Y;
-float rectWidth,rectHeight;
-float button1X,button1Y,button1Width,button1Height;
 
 // Colors
 color circleRed = #FF0000, white = 255;
-
 void setup(){
 size(500,600);
 rectWidth = width*1/3;
@@ -76,17 +73,9 @@ pt16Y = height*3/3;
 
 ptDiameter = width*1/27.7777777777;
 
-rectHeight = width*1/3;
-
-rectWidth = height*1/3;
-
-button1X = width*0;
-button1Y = height*0;
-button1Width = width*1/3;
-button1Height = height*1/3;
-
 quitButtonSetup();
-//buttonSetup2();
+// buttonSetup2();
+
 }
 
 void draw(){
@@ -111,7 +100,6 @@ void draw(){
    ellipse(pt15X, pt15Y, ptDiameter, ptDiameter);
    ellipse(pt16X, pt16Y, ptDiameter, ptDiameter);
    fill(white);
-
    
    buttonDraw1();
 //   buttonDraw2();
@@ -125,6 +113,4 @@ void mousePressed(){
 quitButtonMouseClicked();
 buttonMouseClicked1();
 //buttonMouseClicked2();
-if (mouseX >= button1X  && mouseX <= button1X && mouseY >= button1Y && mouseY <= button1Y);{ //WRONG
-println("Button 1 Activated");}
 }
