@@ -17,6 +17,8 @@ float pt14X, pt14Y;
 float pt15X, pt15Y;
 float pt16X, pt16Y;
 
+float line1X,line1Y,line1XX,line1YY;
+
 // Colors
 color circleRed = #FF0000, white = 255;
 void setup(){
@@ -73,10 +75,27 @@ pt16Y = height*3/3;
 
 ptDiameter = width*1/27.7777777777;
 
+line1X = width*1/3;
+line1Y = height*0;
+line1XX = line1X;
+line1YY = height*1/3;
 
+line2X
+line2Y
+line2XX
+line2YY
 
+line3X
+line3Y
+line3XX
+line3YY
 
+line4X
+line4Y
+line4XX
+line4YY
 
+quitButtonSetup();
 }
 
 void draw(){
@@ -84,6 +103,7 @@ void draw(){
   ellipse(pt1X,pt1Y,ptDiameter,ptDiameter);
   fill(white);
   fill(circleRed);
+  line(line1X,line1Y,line1XX,line1YY);
    ellipse(pt1X,pt1Y,ptDiameter,ptDiameter);
    ellipse(pt2X,pt2Y, ptDiameter, ptDiameter);
    ellipse(pt3X,pt3Y, ptDiameter, ptDiameter);
