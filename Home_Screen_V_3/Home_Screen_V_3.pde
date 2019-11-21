@@ -17,30 +17,15 @@ float pt14X, pt14Y;
 float pt15X, pt15Y;
 float pt16X, pt16Y;
 
-float line1X,line1Y,line1XX,line1YY;
-float line2X,line2Y,line2XX,line2YY;
-float line3X,line3Y,line3XX,line3YY;
-float line4X,line4Y,line4XX,line4YY;
-float line5X,line5Y,line5XX,line5YY;
-float line6X,line6Y,line6XX,line6YY;
-float line7X,line7Y,line7XX,line7YY;
-float line8X,line8Y,line8XX,line8YY;
-float line9X,line9Y,line9XX,line9YY;
-float line10X,line10Y,line10XX,line10YY;
-float line11X,line11Y,line11XX,line11YY;
-float line12X,line12Y,line12XX,line12YY;
-float line13X,line13Y,line13XX,line13YY;
-float line14X,line14Y,line14XX,line14YY;
-float line15X,line15Y,line15XX,line15YY;
-float line16X,line16Y,line16XX,line16YY;
-float line17X,line17Y,line17XX,line17YY;
-float line18X,line18Y,line18XX,line18YY;
-float line19X,line19Y,line19XX,line19YY;
-float line20X,line20Y,line20XX,line20YY;
-float line21X,line21Y,line21XX,line21YY;
-float line22X,line22Y,line22XX,line22YY;
-float line23X,line23Y,line23XX,line23YY;
-float line24X,line24Y,line24XX,line24YY;
+float button1X, button1Y, button1Width, button1Height;
+float button2X, button2Y, button2Width, button2Height;
+float button3X, button3Y, button3Width, button3Height;
+float button4X, button4Y, button4Width, button4Height;
+float button5X, button5Y, button5Width, button5Height;
+float button6X, button6Y, button6Width, button6Height;
+float button7X, button7Y, button7Width, button7Height;
+float button8X, button89, button8Width, button8Height;
+float button9X, button9Y, button9Width, button9Height;
 
 // Colors
 color circleRed = #FF0000, white = 255;
@@ -49,7 +34,7 @@ size(500,600);
 rectWidth = width*1/3;
 rectHeight = height*1/3;
 pt1X = width*0; // top row first
-pt1Y = width*0;
+pt1Y = height*0;
 
 pt2X =  width*1/3; // top row, second
 pt2Y = pt1Y;
@@ -98,25 +83,15 @@ pt16Y = height*3/3;
 
 ptDiameter = width*1/27.7777777777;
 
-line1X = width*0/3;
-line1Y = height*0;
-line1XX = line1X;
-line1YY = height*1/3;
+button1X = width*1/3*2/4;
+button1Y = height*1/3*3/5;
+button1Width = width*1/3*1/3;
+button1Height = height*1/3*1/3;
 
-line2X = width*1/3;
-line2Y = line1X;
-line2XX = line2X;
-line2YY = line1YY;
-
-line3X
-//line3Y
-//line3XX
-//line3YY
-
-//line4X
-//line4Y
-//line4XX
-//line4YY
+button2X = width*2/3*3/5;
+button2Y = height*1/3*3/5;
+button2Width = width*2/4*2/4;
+button2Height = height*1/4*1/4;
 
 quitButtonSetup();
 }
@@ -125,33 +100,20 @@ void draw(){
   fill(0);
   ellipse(pt1X,pt1Y,ptDiameter,ptDiameter);
   fill(white);
+  rect(pt1X,pt1Y,pt2X,pt5Y,28,28,28,28);
+  rect(pt2X,pt1Y,pt2X,pt5Y,28,28,28,28);
+  rect(pt3X,pt1Y,pt2X,pt5Y,28,28,28,28);
+  rect(pt1X,pt5Y,pt2X,pt5Y,28,28,28,28);
+  rect(pt2X,pt5Y,pt2X,pt5Y,28,28,28,28);
+  rect(pt3X,pt5Y,pt2X,pt5Y,28,28,28,28);
+  rect(pt1X,pt9Y,pt2X,pt5Y,28,28,28,28);
+  rect(pt2X,pt9Y,pt2X,pt5Y,28,28,28,28);
+  rect(pt3X,pt9Y,pt2X,pt5Y,28,28,28,28);
+  
+  rect(button1X,button1Y,button1Width,button1Height);
+  rect(button2X,button2Y,button2Width,button2Height);
+  
   fill(circleRed);
-  
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line2X,line2Y,line2XX,line2YY);
-  line(line3X,line3Y,line3XX,line3YY);
-  line(line4X,line4Y,line4XX,line4YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  line(line1X,line1Y,line1XX,line1YY);
-  
    ellipse(pt1X,pt1Y,ptDiameter,ptDiameter);
    ellipse(pt2X,pt2Y, ptDiameter, ptDiameter);
    ellipse(pt3X,pt3Y, ptDiameter, ptDiameter);
