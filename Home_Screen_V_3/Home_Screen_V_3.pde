@@ -18,6 +18,29 @@ float pt15X, pt15Y;
 float pt16X, pt16Y;
 
 float line1X,line1Y,line1XX,line1YY;
+float line2X,line2Y,line2XX,line2YY;
+float line3X,line3Y,line3XX,line3YY;
+float line4X,line4Y,line4XX,line4YY;
+float line5X,line5Y,line5XX,line5YY;
+float line6X,line6Y,line6XX,line6YY;
+float line7X,line7Y,line7XX,line7YY;
+float line8X,line8Y,line8XX,line8YY;
+float line9X,line9Y,line9XX,line9YY;
+float line10X,line10Y,line10XX,line10YY;
+float line11X,line11Y,line11XX,line11YY;
+float line12X,line12Y,line12XX,line12YY;
+float line13X,line13Y,line13XX,line13YY;
+float line14X,line14Y,line14XX,line14YY;
+float line15X,line15Y,line15XX,line15YY;
+float line16X,line16Y,line16XX,line16YY;
+float line17X,line17Y,line17XX,line17YY;
+float line18X,line18Y,line18XX,line18YY;
+float line19X,line19Y,line19XX,line19YY;
+float line20X,line20Y,line20XX,line20YY;
+float line21X,line21Y,line21XX,line21YY;
+float line22X,line22Y,line22XX,line22YY;
+float line23X,line23Y,line23XX,line23YY;
+float line24X,line24Y,line24XX,line24YY;
 
 // Colors
 color circleRed = #FF0000, white = 255;
@@ -75,25 +98,25 @@ pt16Y = height*3/3;
 
 ptDiameter = width*1/27.7777777777;
 
-line1X = width*1/3;
+line1X = width*0/3;
 line1Y = height*0;
 line1XX = line1X;
 line1YY = height*1/3;
 
-line2X
-line2Y
-line2XX
-line2YY
+line2X = width*1/3;
+line2Y = line1X;
+line2XX = line2X;
+line2YY = line1YY;
 
 line3X
-line3Y
-line3XX
-line3YY
+//line3Y
+//line3XX
+//line3YY
 
-line4X
-line4Y
-line4XX
-line4YY
+//line4X
+//line4Y
+//line4XX
+//line4YY
 
 quitButtonSetup();
 }
@@ -103,7 +126,32 @@ void draw(){
   ellipse(pt1X,pt1Y,ptDiameter,ptDiameter);
   fill(white);
   fill(circleRed);
+  
   line(line1X,line1Y,line1XX,line1YY);
+  line(line2X,line2Y,line2XX,line2YY);
+  line(line3X,line3Y,line3XX,line3YY);
+  line(line4X,line4Y,line4XX,line4YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  line(line1X,line1Y,line1XX,line1YY);
+  
    ellipse(pt1X,pt1Y,ptDiameter,ptDiameter);
    ellipse(pt2X,pt2Y, ptDiameter, ptDiameter);
    ellipse(pt3X,pt3Y, ptDiameter, ptDiameter);
