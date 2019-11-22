@@ -24,11 +24,16 @@ float button4X, button4Y, button4Width, button4Height;
 float button5X, button5Y, button5Width, button5Height;
 float button6X, button6Y, button6Width, button6Height;
 float button7X, button7Y, button7Width, button7Height;
-float button8X, button89, button8Width, button8Height;
+float button8X, button8Y, button8Width, button8Height;
 float button9X, button9Y, button9Width, button9Height;
 
+boolean turnOnRandom, turnOnRotate;
+
 // Colors
-color circleRed = #FF0000, white = 255;
+color circleRed = #FF0000, white = 255, black = 0;
+
+String word = "Click Me!";
+
 void setup(){
 size(500,600);
 rectWidth = width*1/3;
@@ -93,6 +98,40 @@ button2Y = height*1/3*3/5;
 button2Width = width*2/4*2/4;
 button2Height = height*1/4*1/4;
 
+button3X = width*3/3*2/3;
+button3Y = width*1/3*1/3;
+button3Width = width*1/3*1/3;
+button3Height = width*1/3*1/3;
+
+button4X = width*1/3*2/3;
+button4Y = height*2/3*2/3;
+button4Width = width*1/4*1/4;
+button4Height = height*1/3*1/3;
+
+button5X = width*3/3*1/3;
+button5Y = height*2/3*2/3;
+button5Width = width*2/3*1/3;
+button5Height = height*1/3*1/3;
+
+button6X = width*3/3*2/3;
+button6Y = height*3/3*1/3;
+button6Width = width*1/4*1/4;
+button6Height = height*1/4*1/4;
+
+button7X = width*1/3*1/13;
+button7Y = height*3/3*3/4;
+button7Width = width*1/3*3/5;
+button7Height= height*1/3*2/3;
+
+button8X = width*2/3*2/3;
+button8Y = height*3/3*4/5;
+button8Width= width*2/4*1/4;
+button8Height = height*1/3*2/3;
+
+button9X = width*3/3*4/5;
+button9Y = height*3/3*4/5;
+button9Width = width*1/10*1/10;
+button8Height = height*1/10*1/10;
 quitButtonSetup();
 }
 
@@ -110,8 +149,16 @@ void draw(){
   rect(pt2X,pt9Y,pt2X,pt5Y,28,28,28,28);
   rect(pt3X,pt9Y,pt2X,pt5Y,28,28,28,28);
   
+  fill(255);
   rect(button1X,button1Y,button1Width,button1Height);
   rect(button2X,button2Y,button2Width,button2Height);
+  rect(button3X, button3Y, button3Width, button3Height);
+  rect(button4X, button4Y, button4Width, button4Height);
+  rect(button5X,button5Y,button5Width, button5Height);
+  rect(button6X, button6Y, button6Width, button6Height);
+  rect(button7X, button7Y, button7Width, button7Height);
+  rect(button8X, button8Y,button8Width,button8Height);
+  rect(button9X, button9Y, button9Width, button8Height);
   
   fill(circleRed);
    ellipse(pt1X,pt1Y,ptDiameter,ptDiameter);
@@ -131,11 +178,38 @@ void draw(){
    ellipse(pt15X, pt15Y, ptDiameter, ptDiameter);
    ellipse(pt16X, pt16Y, ptDiameter, ptDiameter);
    fill(white);
-   
+   //
+if (mouseX >= button1X && mouseX <= button1X+button1Width && mouseY >= button1Y && mouseY <= button1Y+button1Height){
+fill(black);
+rect(button1X,button1Y,button1Width,button1Height);
+fill(white);
+textAlign(CENTER,CENTER);
+text(word,button1X,button1Y,button1Width,button1Height);
+fill(255);
+}
+if (mouseX >= button2X && mouseX <= button2X+button2Width && mouseY >= button2Y && mouseY <= button2Y+button2Height){
+fill(black);
+rect(button2X,button2Y,button2Width,button2Height);
+fill(white);
+textAlign(CENTER,CENTER);
+text(word,button2X,button2Y,button2Width,button2Height);
+fill(white);
+}
+
 quitButtonDraw();
 
 }
 
 void mousePressed(){
-quitButtonMouseClicked();
+if (mouseX >= button1X && mouseX <= button1X+button1Width && mouseY >= button1Y && mouseY <= button1Y+button1Height){
+  println("Button 1 is Activated");
+  turnOnRandom = true;
+}
+if (mouseX >= button2X && mouseX <= button2X+button2Width && mouseY >= button2Y && mouseY <= button2Y+button2Height){
+  println("Button 2 is Activated");
+  turnOnRotate = true;
+}
+if (mouseX >= button3X && mouseX <= button3X+button3Width && mouseY >= button3Y && mouseY <= button3Y+button3Height){
+ println("Button 3 is Activated"); 
+}
 }
